@@ -18,3 +18,13 @@
 * **What I Learned:** I learned that Langsmith uses a `thread_ts` (timestamp/ID) to group otherwise independent runs into a single, continuous conversation. This is the mechanism that allows the UI to display threaded views for chatbots and agents, making it possible to trace an entire conversation's history.
 * **My Code Tweak:** I simulated a two-turn conversation. I manually created a unique `conversation_id` and assigned it to the `thread_ts` field in the `extra` metadata for two separate `RunTree` objects. The first turn introduced a name, and the second asked the AI to recall it. In Langsmith, this correctly grouped the two runs into one thread, demonstrating the concept.
 * **Source File:** [lesson_4.ipynb](my_learnings/module_1/lesson_4.ipynb)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#### MODULE 2
+
+### Video 1: Datasets
+* **What I Learned:** I learned how to programmatically create datasets in Langsmith using the SDK. The key steps are to initialize the `Client`, use `client.create_dataset()` to establish a new dataset with a name and description, and then use `client.create_examples()` with the `dataset_id` to upload examples in bulk.
+* **My Code Tweak:** To demonstrate flexibility, I created a second dataset specifically for a summarization task. I defined a new schema with "article" as the input key and "summary" as the output key. This shows how to create datasets for various evaluation tasks beyond the standard question-and-answer format.
+* **Source File:** [lesson_1.ipynb](my_learnings/module_2/lesson_1.ipynb)
