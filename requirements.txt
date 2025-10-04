@@ -1,18 +1,8 @@
-# Pinned versions for stability
 langchain==0.1.16
+langsmith==0.1.52
 langchain-openai==0.1.3
 python-dotenv==1.0.1
-jupyterlab==4.1.5
-ipykernel==6.29.4
-
-# Additional packages from the course
-langgraph
-langgraph-sdk
-langgraph-checkpoint-sqlite
-langchain-community
-langchain-core
-notebook
-lxml
 scikit-learn
-pandas
-pyarrow
+jupyterlab
+ipykernel
+lxml
