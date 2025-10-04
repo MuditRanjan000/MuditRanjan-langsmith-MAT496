@@ -38,3 +38,8 @@
 * **What I Learned:** I learned the concept of using LangSmith Experiments to compare different models or prompts. The method involves running multiple evaluations against the same dataset and assigning them a shared `project_name` for side-by-side analysis in the UI.
 * **My Code Tweak & Issue:** My goal was to create an experiment comparing `gpt-3.5-turbo` and `gpt-4o` on a summarization task. However, the code was blocked by the same persistent `ImportError` for `EvaluationConfig` from the previous lesson, confirming an unresolvable issue with the local environment.
 * **Source File:** [lesson_3.ipynb](my_learnings/module_2/lesson_3.ipynb)
+
+### Video 4: Analyzing Experiment Results
+* **What I Learned:** I learned that LangSmith provides an SDK method, `client.get_experiment_results()`, to programmatically fetch the results of a completed experiment. This allows for automated analysis, reporting, and comparison of performance metrics between different runs (e.g., different models or prompts).
+* **My Code Tweak & Issue:** My intention was to fetch and display the results from the experiment defined in the previous lesson. However, this was not possible as the experiment itself could not be run due to the persistent `ImportError` that occurred in previous lessons, confirming an unresolvable issue with the local environment configuration.
+* **Source File:** [lesson_4.ipynb](my_learnings/module_2/lesson_4.ipynb)
