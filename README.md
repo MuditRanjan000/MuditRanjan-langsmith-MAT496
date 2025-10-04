@@ -28,3 +28,9 @@
 * **What I Learned:** I learned how to programmatically create datasets in Langsmith using the SDK. The key steps are to initialize the `Client`, use `client.create_dataset()` to establish a new dataset with a name and description, and then use `client.create_examples()` with the `dataset_id` to upload examples in bulk.
 * **My Code Tweak:** To demonstrate flexibility, I created a second dataset specifically for a summarization task. I defined a new schema with "article" as the input key and "summary" as the output key. This shows how to create datasets for various evaluation tasks beyond the standard question-and-answer format.
 * **Source File:** [lesson_1.ipynb](my_learnings/module_2/lesson_1.ipynb)
+
+### Video 2: Evaluators
+* **What I Learned:** I learned the concepts of how to automate the evaluation process using the `run_on_dataset` function and `EvaluationConfig` object. The goal was to run a model against a dataset and apply both built-in and custom evaluators to score the results.
+* **My Code Tweak & Issue:** I attempted to implement the lesson's code and a custom evaluator. However, I encountered a persistent `ImportError` for core evaluation functions like `run_on_dataset` and `EvaluationConfig`. This error persisted through exhaustive debugging, which included force-reinstalling libraries, creating a clean virtual environment with pinned dependencies from a `requirements.txt` file, re-registering the Jupyter kernel, and finally, attempting to run the code in a completely isolated Google Colab environment. The code is committed in its non-working state to document this unresolvable environment conflict.
+* **Source File:** [lesson_2.ipynb](my_learnings/module_2/lesson_2.ipynb)
+
