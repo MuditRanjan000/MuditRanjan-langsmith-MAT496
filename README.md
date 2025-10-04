@@ -34,3 +34,7 @@
 * **My Code Tweak & Issue:** I attempted to implement the lesson's code and a custom evaluator. However, I encountered a persistent `ImportError` for core evaluation functions like `run_on_dataset` and `EvaluationConfig`. This error persisted through exhaustive debugging, which included force-reinstalling libraries, creating a clean virtual environment with pinned dependencies from a `requirements.txt` file, re-registering the Jupyter kernel, and finally, attempting to run the code in a completely isolated Google Colab environment. The code is committed in its non-working state to document this unresolvable environment conflict.
 * **Source File:** [lesson_2.ipynb](my_learnings/module_2/lesson_2.ipynb)
 
+### Video 3: Experiments
+* **What I Learned:** I learned the concept of using LangSmith Experiments to compare different models or prompts. The method involves running multiple evaluations against the same dataset and assigning them a shared `project_name` for side-by-side analysis in the UI.
+* **My Code Tweak & Issue:** My goal was to create an experiment comparing `gpt-3.5-turbo` and `gpt-4o` on a summarization task. However, the code was blocked by the same persistent `ImportError` for `EvaluationConfig` from the previous lesson, confirming an unresolvable issue with the local environment.
+* **Source File:** [lesson_3.ipynb](my_learnings/module_2/lesson_3.ipynb)
